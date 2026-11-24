@@ -1,3 +1,17 @@
 spring:
   application:
     name: barber
+
+  datasource:
+    url: jdbc:h2:mem:barber
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
